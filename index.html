@@ -86,6 +86,8 @@
   .divider{height:1px;background:linear-gradient(90deg,transparent,var(--border-glow),transparent);margin:0 auto;max-width:1200px;}
 
   section{padding:110px 0;position:relative;z-index:2;}
+  .why-section-tight{padding-bottom:40px;}
+  .stats-section{padding-top:40px;}
   .section-label{font-size:.8rem;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:14px;}
   .section-title{font-size:2.1rem;max-width:640px;margin-bottom:20px;}
   .section-sub{color:var(--muted);max-width:600px;line-height:1.7;margin-bottom:60px;}
@@ -170,16 +172,13 @@
   .ticker-wrap:hover .ticker-track{animation-play-state:paused;}
   .ticker-item{
     display:flex;align-items:center;justify-content:center;
-    height:56px;min-width:120px;opacity:.7;transition:opacity .25s;
-    filter:grayscale(1) brightness(1.6);
+    height:56px;min-width:120px;opacity:1;
   }
-  .ticker-item:hover{opacity:1;filter:grayscale(0) brightness(1);}
   .ticker-item img{max-height:40px;max-width:150px;object-fit:contain;}
   .ticker-item.logo-card{
     background:#fff;border-radius:8px;padding:8px 16px;height:auto;
-    filter:none;opacity:.9;
+    opacity:1;
   }
-  .ticker-item.logo-card:hover{opacity:1;}
   .ticker-item.logo-card img{max-height:34px;}
   .ticker-fallback{
     display:none;font-family:'Playfair Display',serif;font-size:1.15rem;
@@ -394,7 +393,7 @@
 <div class="divider container"></div>
 
 <!-- WHY -->
-<section id="why">
+<section id="why" class="why-section-tight">
   <div class="container">
     <div class="section-label reveal">Background</div>
     <h2 class="section-title reveal">Why Anna is the right fit for a governance & operations lead role</h2>
@@ -408,7 +407,7 @@
 </section>
 
 <!-- STATS -->
-<section>
+<section class="stats-section">
   <div class="container">
     <div class="about-strip">
       <div class="reveal"><div class="stat-num">13+</div><div class="stat-label">Years in Financial & Insurance Services</div></div>
