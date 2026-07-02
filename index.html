@@ -42,6 +42,10 @@
     border-bottom:1px solid var(--border);
   }
   .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:20px 40px;max-width:1200px;margin:0 auto;}
+  .nav-brand{display:flex;align-items:center;gap:16px;}
+  .tt-logo-link{display:flex;align-items:center;padding-right:16px;border-right:1px solid var(--border-glow);}
+  .tt-logo{height:26px;width:auto;display:block;opacity:.92;transition:opacity .2s;}
+  .tt-logo-link:hover .tt-logo{opacity:1;}
   .nav-name{font-family:'Playfair Display',serif;font-size:1.1rem;letter-spacing:.5px;}
   .nav-links{display:flex;gap:36px;font-size:.85rem;letter-spacing:.5px;text-transform:uppercase;}
   .nav-links a{opacity:.75;transition:opacity .2s, color .2s;}
@@ -195,6 +199,8 @@
   footer .f-links{display:flex;justify-content:center;gap:24px;font-size:.85rem;color:var(--muted);margin-bottom:16px;}
   footer .f-links a:hover{color:var(--accent);}
   footer .copyright{font-size:.78rem;color:#5a5a68;}
+  .footer-tt-link{color:#5a5a68;text-decoration:underline;text-underline-offset:2px;transition:color .2s;}
+  .footer-tt-link:hover{color:var(--accent);}
 
   .back-to-top{
     position:fixed;bottom:30px;right:30px;width:46px;height:46px;border-radius:50%;
@@ -217,6 +223,10 @@
     .container{padding:0 24px;}
     .nav-links{display:none;}
     .nav-hamburger{display:flex;}
+    .nav-name{font-size:.9rem;}
+    .tt-logo{height:20px;}
+    .tt-logo-link{padding-right:10px;}
+    .nav-brand{gap:10px;}
     .hero{padding:120px 24px 60px;}
     .hero h1{font-size:2.3rem;}
     .why-grid{grid-template-columns:1fr;}
@@ -238,7 +248,12 @@
 
 <nav>
   <div class="nav-inner">
-    <div class="nav-name">Anna Shusterovich</div>
+    <div class="nav-brand">
+      <a href="https://www.transformtogether.co.uk/" target="_blank" rel="noopener" class="tt-logo-link">
+        <img src="LOGO_TT.png" alt="Transform Together" class="tt-logo">
+      </a>
+      <div class="nav-name">Anna Shusterovich</div>
+    </div>
     <div class="nav-links">
       <a href="#expertise">Expertise</a>
       <a href="#experience">Experience</a>
@@ -420,7 +435,7 @@
 <footer id="contact">
   <div class="container">
     <div class="f-name">Anna Shusterovich</div>
-    <div class="copyright">© 2026 Anna Shusterovich · Prepared for client pitch by Transform Together</div>
+    <div class="copyright">© 2026 Anna Shusterovich · Prepared for client pitch by <a href="https://www.transformtogether.co.uk/" target="_blank" rel="noopener" class="footer-tt-link">Transform Together</a></div>
   </div>
 </footer>
 
